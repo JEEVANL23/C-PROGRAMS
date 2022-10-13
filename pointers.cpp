@@ -5,8 +5,8 @@ int main(){
 
         int x = 10;
         
-        int *p;
-        p = &x;
+        int *p;     //declaring pointers
+        p = &x;     // initializating pointers
 
         cout<<x<<endl; // display data of x
 
@@ -16,7 +16,8 @@ int main(){
 
         cout<<&p<<endl; // display address of p
 
-        cout<<*p<<endl; // displays data present in p's pointing the address
+        cout<<*p<<endl; // displays data present in p's pointing the address 
+        // dereferencing pointers = accessing the data of that location
         
 
 
