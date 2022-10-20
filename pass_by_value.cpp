@@ -9,9 +9,13 @@ int add(int x,int y)        // formal parameters
 int main(){
 
 
-    int a = 10,b = 5,c;
+    int a,b,c;
+    cout<<"enter a"<<endl;
+    cin>>a;
+    cout<<"enter b"<<endl;
+    cin>>b;
     c = add(a,b);       // actual parameters
-    cout<<c;
+    cout<<c<<endl;
     
 
 
