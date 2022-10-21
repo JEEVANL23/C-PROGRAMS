@@ -14,8 +14,8 @@ class rect{
             rect();
             rect(int l, int b); // constructors
 
-            int  getlength();
-            int getbreadth();   // accessors - to read the value
+            int  getlength(){return length;};
+            int getbreadth(){return breadth;};   // accessors - to read the value
 
             void setlength(int l);
             void setbreadth(int b);       // mutators - to write value
@@ -59,12 +59,36 @@ class rect{
 
         cout<<"class is destoryed"<<endl;
     }
-    
+
+    class cuboid : public rect{
+        private:
+                int height;
+
+        public:
+                cuboid(int h)
+                {
+                    height = h;
+                }
+                int hetheight()
+                {
+                    return height;
+                }
+                void setheight(int h)
+                {
+                    height = h;
+                }
+                int volume()
+                {
+                    return getlength() * getbreadth() * height;
+                }
+    };
 int main(){
     
-    rect r(10,5);
-    cout<<r.area()<<endl;
-    cout<<r.perimeter()<<endl;
+    cuboid c(5);
+    c.setlength(3);
+    c.setbreadth(2);
+    cout<<c.volume()<<endl;
+
 
 
     return 0;
